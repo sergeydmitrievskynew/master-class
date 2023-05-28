@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="index.css">
+
+    <title>Сайт визитка</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Привет! Меня зовут Сергей.<br>Я обучаю людей программированию.</h1>
+
+        <img src="me.jpg">
+
+        <button>Интересный факт обо мне</button>
+
+        <p>Прыгнул с высоты 207 метров 😱</p>
+    </div>
+
+    <script>
+        const button = document.querySelector('button');
+        const paragraph = document.querySelector('p');
+
+        button.addEventListener('click', function() {
+            paragraph.classList.toggle('opened');
+        });
+    </script>
+</body>
+</html>
